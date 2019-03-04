@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="ExtentReportListener.Listener"/>
+  </listeners>
+  <test name="RegistrationTest(failed)" parallel="tests">
+    <classes>
+      <class name="web.Tests.RegistrationTest">
+        <methods>
+          <include name="endTest"/>
+          <include name="setUp"/>
+          <include name="setExtent"/>
+          <include name="invalidRegistration"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- web.Tests.RegistrationTest -->
+    </classes>
+  </test> <!-- RegistrationTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
